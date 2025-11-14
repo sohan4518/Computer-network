@@ -10,6 +10,7 @@ proc finish {} {
  close $namfile
  exec nam s3.nam &
  exit 0
+ }
 set n0 [$ns node]
 set n1 [$ns node]
 set n2 [$ns node]
@@ -63,3 +64,9 @@ $ns at 5.0 "$ftp2 stop"
 $ns at 5.0 "$ftp1 stop"
 $ns at 5.5 "finish"
 $ns run
+
+
+
+
+
+
