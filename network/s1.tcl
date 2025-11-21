@@ -36,13 +36,4 @@ $ns run
 
 
 
-
-
-
-
-
-
-
-
-
-$ns
+xgraph -x "Bandwidth(Mbps)" -y "No of packets dropped" -t "Performance analysis" sigraph
