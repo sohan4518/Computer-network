@@ -66,7 +66,13 @@ $ns at 5.5 "finish"
 $ns run
 
 
+awk -f s3.awk cwnd1.tr > TCPVegas
 
+xgraph -x "Time (sec)" -y "Congestion Window Size" -t "Congestion Window graph for TCP1" TCPVegas
+
+awk -f s3.awk cwnd2.tr > TCPReno
+
+xgraph -x "Time (sec)" -y "Congestion Window Size" -t "Congestion Window graph for TCP2" TCPReno
 
 
 
